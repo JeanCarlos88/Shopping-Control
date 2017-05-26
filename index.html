@@ -5,7 +5,8 @@
 	<title></title>
 	
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<script ></script>
+	<link rel="stylesheet" href="css/style.css">
+	
 
 </head>
 <body>
@@ -19,6 +20,27 @@
 	</nav>
 
 	<div class="container-fluid">
+
+	<div class="form-inline">
+		<div class="form-group">
+			<input type="text" class="form-control" id="desc" placeholder="description">
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" id="amount" placeholder="Amount">
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" id="value" placeholder="Value">
+		</div>
+
+		<span id="btn-update">
+			<button onclick="updateData();" class="btn btn-default">Save</button>
+
+			<button onclick="resetForm();" class="btn btn-default">Cancel</button>
+		</span>
+
+		<button id="btn-add" onclick="addData();" class="btn btn-default">Add</button>
+	</div>
+
 		<table id="list-table" class="table">
 			
 		</table>
